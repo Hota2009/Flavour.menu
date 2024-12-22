@@ -1,15 +1,119 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ar">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Flavour</title>
+    <title>Flavour Cafe</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: "Arial", sans-serif;
+            background-color: #f8f5f0; /* لون خلفية هادئ */
+            color: #4a3f35; /* مستوحى من ألوان اللوجو */
+        }
+
+        header {
+            background-color: #4a3f35; /* بني داكن */
+            color: #d4a373; /* ذهبي خفيف */
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        header img {
+            width: 120px;
+            margin-bottom: 10px;
+        }
+
+        main {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: calc(100vh - 150px); /* المساحة بين الهيدر والفوتر */
+        }
+
+        embed {
+            width: 95%;
+            height: 95%;
+            border: 2px solid #d4a373;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        footer {
+            background-color: #4a3f35; /* نفس لون الهيدر */
+            color: #f8f5f0;
+            text-align: center;
+            padding: 10px 0;
+            font-size: 14px;
+        }
+
+        footer a {
+            color: #d4a373;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+        #snowflakes {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none; /* الثلج لن يتداخل مع التفاعل مع الموقع */
+    z-index: 9999;
+}
+
+.snowflake {
+    position: absolute;
+    background-color: white;
+    border-radius: 50%;
+    opacity: 0.8;
+    pointer-events: none;
+    animation: fall linear infinite;
+}
+
+@keyframes fall {
+    0% {
+        transform: translateY(-100px);
+    }
+    100% {
+        transform: translateY(100vh);
+    }
+}
+    </style>
 </head>
 <body>
-    <div class="web">
-    <embed src="https://menu.instalacarte.com/menu/s/ar/Flavour/hot-drink/all/" width="100%" height="670px"/>
-   <center>  <p class="copyright">Made By Ahmed Idrees</p></center> 
-    </div>
- 
+    <header>
+        <h1>Flavour Cafe</h1>
+    </header>
+
+    <main>
+        <embed src="https://menu.instalacarte.com/menu/s/ar/Flavour/hot-drink/all/" />
+    </main>
+    <div id="snowflakes"></div>
+    <script>
+        // عدد قطع الثلج
+const snowflakeCount = 100;
+const snowflakes = document.getElementById('snowflakes');
+
+// إضافة قطع الثلج إلى الصفحة
+for (let i = 0; i < snowflakeCount; i++) {
+    let snowflake = document.createElement('div');
+    snowflake.classList.add('snowflake');
+    snowflake.style.width = Math.random() * 10 + 'px';
+    snowflake.style.height = snowflake.style.width;
+    snowflake.style.left = Math.random() * 100 + 'vw';
+    snowflake.style.animationDuration = Math.random() * 3 + 3 + 's';
+    snowflake.style.animationDelay = Math.random() * 5 + 's';
+    snowflakes.appendChild(snowflake);
+}
+
+    </script>
+    <footer>
+        <p>Made with ♥ by Ahmed Idrees</p>
+    </footer>
 </body>
 </html>
