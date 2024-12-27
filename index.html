@@ -8,7 +8,7 @@
         body, html {
             margin: 0;
             padding: 0;
-            height: 100%; /* تأكد أن HTML و Body يشغلان كامل الارتفاع */
+            height: 100%;
         }
 
         body {
@@ -24,16 +24,52 @@
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            height: 100vh; /* تأكد من أن الـ main يشغل كامل الارتفاع */
+            height: 100vh;
             position: relative;
         }
 
+        /* تغيير حجم الإطار وزيادة الحواف */
         embed {
-            width: 95%; /* العرض 100% */
-            height: 80vh; /* الارتفاع 80% من الشاشة */
-            border: 10px solid red; /* إضافة غلاف أحمر */
-            border-radius: 10px; /* إضافة حواف مدورة للإطار */
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* إضافة ظل خفيف للإطار */
+            width: 100%;
+            height: 80vh;
+            border: 20px solid red; /* زيادة سمك الإطار */
+            border-radius: 20px; /* حواف مدورة أكبر */
+            position: relative; /* جعل العنصر يحتوي على الأيقونات */
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+        }
+
+        /* إضافة الأيقونات داخل الإطار */
+        embed::before, embed::after, embed::nth-child(2) {
+            content: "🎄"; /* إضافة الشجرة أو بابا نويل حسب الحاجة */
+            font-size: 30px;
+            position: absolute;
+            top: 10px;
+            color: red;
+        }
+
+        embed::before {
+            left: 10px;
+        }
+
+        embed::after {
+            right: 10px;
+        }
+
+        embed:nth-child(2) {
+            content: "🎅"; /* بابا نويل */
+            font-size: 30px;
+            position: absolute;
+            top: 10px;
+            left: 5%;
+        }
+
+        /* إضافة رجل الثلج */
+        embed::nth-child(3) {
+            content: "⛄"; /* رجل الثلج */
+            font-size: 30px;
+            position: absolute;
+            top: 10px;
+            left: 15%;
         }
 
         #snowflakes {
@@ -71,8 +107,7 @@
             transform: translateX(-50%);
             width: 150px;
             height: 200px;
-            background: url('https://example.com/christmas-tree.png') no-repeat center center;
-            background-size: contain;
+            z-index: 1000;
         }
 
         #christmas-lights {
@@ -95,25 +130,6 @@
             }
         }
 
-        #santa, #snowman {
-            position: fixed;
-            bottom: 0;
-            z-index: 10000;
-        }
-
-        #santa {
-            left: 30%;
-        }
-
-        #snowman {
-            right: 30%;
-        }
-
-        #santa img, #snowman img {
-            width: 120px;
-            height: auto;
-        }
-
     </style>
 </head>
 <body>
@@ -124,6 +140,15 @@
     </main>
 
     <div id="snowflakes"></div>
+
+    <!-- شجرة الكريسماس -->
+    <div id="christmas-tree">🎄</div> <!-- شجرة كريسماس -->
+
+    <!-- بابا نويل -->
+    <div id="santa">🎅</div> <!-- بابا نويل -->
+
+    <!-- رجل الثلج -->
+    <div id="snowman">⛄</div> <!-- رجل الثلج -->
 
     <script>
         // عدد قطع الثلج على شكل ❄
