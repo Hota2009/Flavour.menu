@@ -3,19 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Flavour Cafe</title>
+    <title>Flavour Cafe - عيد الميلاد</title>
     <style>
-        body {
+        body, html {
             margin: 0;
+            padding: 0;
+            height: 100%; /* تأكد أن HTML و Body يشغلان كامل الارتفاع */
+        }
+
+        body {
             font-family: "Arial", sans-serif;
-            background-color: #f8f5f0; /* لون خلفية هادئ */
-            color: #4a3f35; /* مستوحى من ألوان اللوجو */
+            background-color: #f8f5f0;
+            color: #4a3f35;
+            text-align: center;
+            position: relative;
         }
 
         header {
-            background-color: #4a3f35; /* بني داكن */
-            color: #d4a373; /* ذهبي خفيف */
-            text-align: center;
+            background-color: #4a3f35;
+            color: #d4a373;
             padding: 20px 0;
         }
 
@@ -27,75 +33,128 @@
         main {
             display: flex;
             flex-direction: column;
-            align-items: center;
             justify-content: center;
-            height: calc(100vh - 150px); /* المساحة بين الهيدر والفوتر */
+            align-items: center;
+            height: 100vh; /* تأكد من أن الـ main يشغل كامل الارتفاع */
         }
 
         embed {
-            width: 95%;
-            height: 100%;
-            border: 2px solid #d4a373;
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 100%; /* العرض 100% */
+            height: 100vh; /* الارتفاع 100% من الشاشة */
+            border: none; /* إزالة الحدود */
+            box-shadow: none; /* إزالة الظلال */
         }
 
-        
         #snowflakes {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    pointer-events: none; /* الثلج لن يتداخل مع التفاعل مع الموقع */
-    z-index: 9999;
-}
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            z-index: 9999;
+        }
 
-.snowflake {
-    position: absolute;
-    background-color: white;
-    border-radius: 50%;
-    opacity: 0.8;
-    pointer-events: none;
-    animation: fall linear infinite;
-}
+        .snowflake {
+            position: absolute;
+            font-size: 2rem;
+            color: #ffffff;
+            animation: fall linear infinite;
+            opacity: 0.8;
+            pointer-events: none;
+        }
 
-@keyframes fall {
-    0% {
-        transform: translateY(-100px);
-    }
-    100% {
-        transform: translateY(100vh);
-    }
-}
+        @keyframes fall {
+            0% {
+                transform: translateY(-100px);
+            }
+            100% {
+                transform: translateY(100vh);
+            }
+        }
+
+        #christmas-tree {
+            position: fixed;
+            bottom: 10px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 150px;
+            height: 200px;
+            background: url('https://example.com/christmas-tree.png') no-repeat center center;
+            background-size: contain;
+        }
+
+        #christmas-lights {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 100%;
+            height: 10px;
+            background: url('https://example.com/lights.png') repeat-x;
+            animation: blink 1s infinite alternate;
+        }
+
+        @keyframes blink {
+            0% {
+                opacity: 1;
+            }
+            100% {
+                opacity: 0.5;
+            }
+        }
+
+        #santa, #snowman {
+            position: fixed;
+            bottom: 0;
+            z-index: 10000;
+        }
+
+        #santa {
+            left: 30%;
+        }
+
+        #snowman {
+            right: 30%;
+        }
+
+        #santa img, #snowman img {
+            width: 120px;
+            height: auto;
+        }
+
     </style>
 </head>
 <body>
-  
+
+    <header>
+        <h1>Flavour Cafe</h1>
+    </header>
+
     <main>
+        <!-- عرض القائمة باستخدام Embed -->
         <embed src="https://menu.instalacarte.com/menu/s/ar/Flavour/hot-drink/all/" />
     </main>
-    <div id="snowflakes"></div>
-    <script>
-        // عدد قطع الثلج
-const snowflakeCount = 100;
-const snowflakes = document.getElementById('snowflakes');
 
-// إضافة قطع الثلج إلى الصفحة
-for (let i = 0; i < snowflakeCount; i++) {
-    let snowflake = document.createElement('div');
-    snowflake.classList.add('snowflake');
-    snowflake.style.width = Math.random() * 10 + 'px';
-    snowflake.style.height = snowflake.style.width;
-    snowflake.style.left = Math.random() * 100 + 'vw';
-    snowflake.style.animationDuration = Math.random() * 3 + 3 + 's';
-    snowflake.style.animationDelay = Math.random() * 5 + 's';
-    snowflakes.appendChild(snowflake);
-}
+    <div id="snowflakes"></div>
+
+    <script>
+        // عدد قطع الثلج على شكل ❄
+        const snowflakeCount = 100;
+        const snowflakes = document.getElementById('snowflakes');
+
+        // إضافة قطع الثلج إلى الصفحة
+        for (let i = 0; i < snowflakeCount; i++) {
+            let snowflake = document.createElement('div');
+            snowflake.classList.add('snowflake');
+            snowflake.innerText = '❄'; // شكل الثلج
+            snowflake.style.left = Math.random() * 100 + 'vw'; // تعديل الموقع الأفقي
+            snowflake.style.animationDuration = Math.random() * 3 + 3 + 's'; // تعديل سرعة السقوط
+            snowflake.style.animationDelay = Math.random() * 5 + 's'; // تأخير ظهور بعض قطع الثلج
+            snowflakes.appendChild(snowflake);
+        }
 
     </script>
-    <footer>
-    
-    </footer>
+
 </body>
 </html>
