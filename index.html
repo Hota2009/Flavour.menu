@@ -3,126 +3,73 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Flavour Cafe - عيد الميلاد</title>
+    <title>Flavour Cafe</title>
     <style>
-        body, html {
+        body {
             margin: 0;
-            padding: 0;
-            height: 100%;
+            font-family: "Arial", sans-serif;
+            background-color: #f8f5f0; /* لون خلفية هادئ */
+            color: #4a3f35; /* مستوحى من ألوان اللوجو */
         }
 
-        body {
-            font-family: "Arial", sans-serif;
-            background-color: #f8f5f0;
-            color: #4a3f35;
+        header {
+            background-color: #4a3f35; /* بني داكن */
+            color: #d4a373; /* ذهبي خفيف */
             text-align: center;
-            position: relative;
+            padding: 20px 0;
+        }
+
+        header img {
+            width: 120px;
+            margin-bottom: 10px;
         }
 
         main {
             display: flex;
             flex-direction: column;
-            justify-content: center;
             align-items: center;
-            height: 100vh;
-            position: relative;
+            justify-content: center;
+            height: calc(100vh - 150px); /* المساحة بين الهيدر والفوتر */
         }
 
-        /* تغيير حجم الإطار وزيادة الحواف */
         embed {
             width: 90%;
-            height: 80vh;
-            border: 20px solid red; /* زيادة سمك الإطار */
-            border-radius: 20px; /* حواف مدورة أكبر */
-            position: relative; /* جعل العنصر يحتوي على الأيقونات */
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+            height: 500px;
+            border: 2px solid #d4a373;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
 
-    
-        #snowflakes {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            pointer-events: none;
-            z-index: 9999;
+        footer {
+            background-color: #4a3f35; /* نفس لون الهيدر */
+            color: #f8f5f0;
+            text-align: center;
+            padding: 10px 0;
+            font-size: 14px;
         }
 
-        .snowflake {
-            position: absolute;
-            font-size: 2rem;
-            color: #ffffff;
-            animation: fall linear infinite;
-            opacity: 0.8;
-            pointer-events: none;
+        footer a {
+            color: #d4a373;
+            text-decoration: none;
         }
 
-        @keyframes fall {
-            0% {
-                transform: translateY(-100px);
-            }
-            100% {
-                transform: translateY(100vh);
-            }
+        footer a:hover {
+            text-decoration: underline;
         }
-
-        #christmas-tree {
-            position: fixed;
-            bottom: 10px;
-            left: 50%;
-            transform: translateX(-50%);
-            width: 150px;
-            height: 200px;
-            z-index: 1000;
-        }
-
-        #christmas-lights {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            width: 100%;
-            height: 10px;
-            background: url('https://example.com/lights.png') repeat-x;
-            animation: blink 1s infinite alternate;
-        }
-
-        @keyframes blink {
-            0% {
-                opacity: 1;
-            }
-            100% {
-                opacity: 0.5;
-            }
-        }
-
     </style>
 </head>
 <body>
+    <header>
+        <h1>Flavour Cafe</h1>
+    </header>
 
     <main>
-        <!-- عرض القائمة باستخدام Embed -->
         <embed src="https://menu.instalacarte.com/menu/s/ar/Flavour/hot-drink/all/" />
     </main>
 
-    <div id="snowflakes"></div>
-    <script>
-        // عدد قطع الثلج على شكل ❄
-        const snowflakeCount = 100;
-        const snowflakes = document.getElementById('snowflakes');
-
-        // إضافة قطع الثلج إلى الصفحة
-        for (let i = 0; i < snowflakeCount; i++) {
-            let snowflake = document.createElement('div');
-            snowflake.classList.add('snowflake');
-            snowflake.innerText = '❄'; // شكل الثلج
-            snowflake.style.left = Math.random() * 100 + 'vw'; // تعديل الموقع الأفقي
-            snowflake.style.animationDuration = Math.random() * 3 + 3 + 's'; // تعديل سرعة السقوط
-            snowflake.style.animationDelay = Math.random() * 5 + 's'; // تأخير ظهور بعض قطع الثلج
-            snowflakes.appendChild(snowflake);
-        }
-    </script>
-
+    <footer>
+        <p>© 2024 Flavour Cafe - <a href="https://www.instagram.com/fla.vourcafe" target="_blank">Instagram</a></p>
+        <p>Made with ♥ by Ahmed Idrees</p>
+    </footer>
 </body>
 </html>
