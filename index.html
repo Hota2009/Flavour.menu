@@ -38,40 +38,7 @@
             box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
         }
 
-        /* إضافة الأيقونات داخل الإطار */
-        embed::before, embed::after, embed::nth-child(2) {
-            content: "🎄"; /* إضافة الشجرة أو بابا نويل حسب الحاجة */
-            font-size: 30px;
-            position: absolute;
-            top: 10px;
-            color: red;
-        }
-
-        embed::before {
-            left: 10px;
-        }
-
-        embed::after {
-            right: 10px;
-        }
-
-        embed:nth-child(2) {
-            content: "🎅"; /* بابا نويل */
-            font-size: 30px;
-            position: absolute;
-            top: 10px;
-            left: 5%;
-        }
-
-        /* إضافة رجل الثلج */
-        embed::nth-child(3) {
-            content: "⛄"; /* رجل الثلج */
-            font-size: 30px;
-            position: absolute;
-            top: 10px;
-            left: 15%;
-        }
-
+    
         #snowflakes {
             position: fixed;
             top: 0;
@@ -140,16 +107,6 @@
     </main>
 
     <div id="snowflakes"></div>
-
-    <!-- شجرة الكريسماس -->
-    <div id="christmas-tree">🎄</div> <!-- شجرة كريسماس -->
-
-    <!-- بابا نويل -->
-    <div id="santa">🎅</div> <!-- بابا نويل -->
-
-    <!-- رجل الثلج -->
-    <div id="snowman">⛄</div> <!-- رجل الثلج -->
-
     <script>
         // عدد قطع الثلج على شكل ❄
         const snowflakeCount = 100;
