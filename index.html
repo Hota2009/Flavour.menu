@@ -2,26 +2,29 @@
 <html lang="ar">
 <head>
     <meta charset="UTF-8">
-    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Flavour Cafe - Discover our menu and enjoy delightful beverages and snacks.">
+    <meta name="keywords" content="Flavour Cafe, coffee, beverages, snacks, menu">
+    <meta name="author" content="Ahmed Idrees">
     <title>Flavour Cafe</title>
     <style>
         body {
             margin: 0;
             font-family: "Arial", sans-serif;
-            background-color: #f8f5f0; /* لون خلفية هادئ */
-            color: #4a3f35; /* مستوحى من ألوان اللوجو */
+            background-color: #f8f5f0; /* Calm background color */
+            color: #4a3f35; /* Inspired by the logo colors */
         }
 
         header {
-            background-color: #4a3f35; /* بني داكن */
-            color: #d4a373; /* ذهبي خفيف */
+            background-color: #4a3f35; /* Dark brown */
+            color: #d4a373; /* Soft gold */
             text-align: center;
-            padding: 0px 0;
+            padding: 15px 0;
         }
 
-        header img {
-            width: 120px;
-            margin-bottom: 10px;
+        header h1 {
+            margin: 0;
+            font-size: 24px;
         }
 
         main {
@@ -29,19 +32,21 @@
             flex-direction: column;
             align-items: center;
             justify-content: center;
-            height: calc(100vh - 150px); /* المساحة بين الهيدر والفوتر */
+            height: calc(100vh - 120px); /* Adjust height for header and footer */
+            padding: 20px;
         }
 
         embed {
-            width: 95%;
-            height: 95%;
+            width: 100%;
+            max-width: 1000px; /* زيادة العرض لأقصى حد */
+            height: 90vh; /* زيادة الارتفاع */
             border: 2px solid #d4a373;
             border-radius: 8px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
 
         footer {
-            background-color: #4a3f35; /* نفس لون الهيدر */
+            background-color: #4a3f35; /* Same as header color */
             color: #f8f5f0;
             text-align: center;
             padding: 10px 0;
@@ -56,7 +61,16 @@
         footer a:hover {
             text-decoration: underline;
         }
-       
+
+        @media (max-width: 768px) {
+            embed {
+                height: 80vh; /* تقليل الحجم على الشاشات الصغيرة */
+            }
+
+            header h1 {
+                font-size: 20px;
+            }
+        }
     </style>
 </head>
 <body>
@@ -65,14 +79,12 @@
     </header>
 
     <main>
-        <embed src="https://menu.instalacarte.com/menu/s/ar/Flavour/hot-drink/all/" />
+        <embed src="https://menu.instalacarte.com/menu/s/ar/Flavour/hot-drink/all/" title="Flavour Cafe Menu"></embed>
     </main>
 
     <footer>
-        <p>© 2024 Flavour Cafe - <a href="https://www.instagram.com/fla.vourcafe" target="_blank">Instagram</a></p>
+        <p>© 2024 Flavour Cafe - <a href="https://www.instagram.com/fla.vourcafe" target="_blank" rel="noopener">Instagram</a></p>
         <p>Designed by Ahmed Idrees</p>
     </footer>
-    <script>
-       
 </body>
 </html>
