@@ -20,6 +20,7 @@
             color: #d4a373; /* Soft gold */
             text-align: center;
             padding: 15px 0;
+            position: relative;
         }
 
         header h1 {
@@ -27,12 +28,38 @@
             font-size: 24px;
         }
 
+        .discount-banner {
+            background-color: #d4a373; /* لون الخلفية */
+            color: #4a3f35; /* لون النص */
+            padding: 10px;
+            font-size: 18px;
+            text-align: center;
+            animation: slideLeftRight 5s linear infinite;
+            overflow: hidden; /* لإخفاء النص عند الخروج من الشاشة */
+            white-space: nowrap;
+            position: absolute;
+            bottom: -35px; /* يضعه تحت الهيدر */
+            width: 100%; /* يغطي العرض الكامل */
+        }
+
+        @keyframes slideLeftRight {
+            0% {
+                transform: translateX(100%);
+            }
+            50% {
+                transform: translateX(-50%);
+            }
+            100% {
+                transform: translateX(-100%);
+            }
+        }
+
         main {
             display: flex;
             flex-direction: column;
             align-items: center;
             justify-content: center;
-            height: calc(100vh - 120px); /* Adjust height for header and footer */
+            height: calc(100vh - 160px); /* Adjust height for header, footer, and banner */
             padding: 20px;
         }
 
@@ -70,12 +97,19 @@
             header h1 {
                 font-size: 20px;
             }
+
+            .discount-banner {
+                font-size: 16px; /* تصغير النص على الشاشات الصغيرة */
+            }
         }
     </style>
 </head>
 <body>
     <header>
         <h1>Flavour Cafe</h1>
+        <div class="discount-banner">
+            خصم 30% على جميع المشروبات الساخنة!
+        </div>
     </header>
 
     <main>
