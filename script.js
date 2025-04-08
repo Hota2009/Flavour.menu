@@ -87,7 +87,7 @@ const categories = [
             { id: 5, name: 'Strawberry Smoothie', price: '45 EGP', image: '34.jpg' },
             { id: 6, name: 'Mango Smoothie', price: '45 EGP', image: '35.jpg' },
             { id: 7, name: 'Lemon Mint Smoothie', price: '45 EGP', image: '36.png' },
-            { id: 6, name: 'watermelon Smoothie', price: '45 EGP', image: '86.jpg' }
+            { id: 6, name: 'watermelon Smoothie', price: '45 EGP', image: '86.png' }
         ]
     },
     {
