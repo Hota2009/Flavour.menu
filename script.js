@@ -50,12 +50,12 @@ const categories = [
         icon: '🍹',
         products: [
             { id: 83, name: 'Kiwi', price: '70 EGP', image: '84.png' },
-            { id: 84, name: 'Banana with Milk', price: '40 EGP', image: '85.png' },
-            { id: 85, name: 'Watermelon', price: '30 EGP', image: '86.png' },
+            { id: 84, name: 'Banana with Milk', price: '45 EGP', image: '85.png' },
+            { id: 85, name: 'Watermelon', price: '40 EGP', image: '86.png' },
             { id: 86, name: 'Mango', price: '40 EGP', image: '87.png' },
-            { id: 87, name: 'Strawberry', price: '35 EGP', image: '88.png' },
-            { id: 88, name: 'Guava', price: '35 EGP', image: '89.png' },
-            { id: 89, name: 'Lemon with Mint', price: '35 EGP', image: '90.png' },
+            { id: 87, name: 'Strawberry', price: '40 EGP', image: '88.png' },
+            { id: 88, name: 'Guava', price: '40 EGP', image: '89.png' },
+            { id: 89, name: 'Lemon with Mint', price: '40 EGP', image: '90.png' },
             { id: 90, name: 'Peach', price: '55 EGP', image: '91.png' },
             { id: 91, name: 'Orange', price: '35 EGP', image: '92.png' }
         ]
@@ -84,9 +84,10 @@ const categories = [
             { id: 2, name: 'Passion Fruit Smoothie', price: '65 EGP', image: '31.jpg' },
             { id: 3, name: 'Peach Smoothie', price: '60 EGP', image: '32.jpg' },
             { id: 4, name: 'Kiwi Smoothie', price: '80 EGP', image: '33.jpg' },
-            { id: 5, name: 'Strawberry Smoothie', price: '40 EGP', image: '34.jpg' },
+            { id: 5, name: 'Strawberry Smoothie', price: '45 EGP', image: '34.jpg' },
             { id: 6, name: 'Mango Smoothie', price: '45 EGP', image: '35.jpg' },
-            { id: 7, name: 'Lemon Mint Smoothie', price: '40 EGP', image: '36.png' }
+            { id: 7, name: 'Lemon Mint Smoothie', price: '45 EGP', image: '36.png' },
+            { id: 6, name: 'watermelon Smoothie', price: '45 EGP', image: '86.jpg' }
         ]
     },
     {
@@ -110,16 +111,16 @@ const categories = [
             { id: 1, name: 'Passion Fruit', price: '65 EGP', image: '37.png' },
             { id: 2, name: 'Blueberry', price: '65 EGP', image: '38.png' },
             { id: 3, name: 'Mixed Berry', price: '70 EGP', image: '39.png' },
-            { id: 4, name: 'Kiwi', price: '65 EGP', image: '40.png' },
+            { id: 4, name: 'Kiwi', price: '70 EGP', image: '40.png' },
             { id: 5, name: 'Peach', price: '60 EGP', image: '41.png' },
             { id: 6, name: 'Watermelon', price: '55 EGP', image: '42.png' },
             { id: 7, name: 'Mango', price: '55 EGP', image: '43.png' },
             { id: 8, name: 'Strawberry', price: '55 EGP', image: '44.png' },
             { id: 9, name: 'Marshmallow', price: '65 EGP', image: '45.png' },
             { id: 10, name: 'Vanilla', price: '50 EGP', image: '46.png' },
-            { id: 11, name: 'Chocolate', price: '50 EGP', image: '47.png' },
+            { id: 11, name: 'Chocolate', price: '55 EGP', image: '47.png' },
             { id: 12, name: 'Lotus', price: '70 EGP', image: '48.png' },
-            { id: 13, name: 'Oreo', price: '55 EGP', image: '49.png' },
+            { id: 13, name: 'Oreo', price: '60 EGP', image: '49.png' },
             { id: 14, name: 'Pistachio', price: '75 EGP', image: '50.webp' },
             { id: 15, name: 'Lagoon', price: '60 EGP', image: '51.png' },
             { id: 16, name: 'Lemon', price: '50 EGP', image: '52.jpg' },
