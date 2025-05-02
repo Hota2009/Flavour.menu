@@ -181,7 +181,8 @@ const categories = [
             { id: 17, name: 'Blue Power', price: '95 EGP', image: '18.png', description: 'Ingredients: Red Bull, Blue Curacao, lemon, soda' },
             { id: 18, name: 'Passion Fruit Mojito', price: '60 EGP', image: '19.png', description: 'Ingredients: Passion fruit, lemon, soda' },
             { id: 19, name: 'Gum', price: '50 EGP', image: '20.png', description: 'Gum' },
-            { id: 20, name: 'Apple Mint', price: '65 EGP', image: '21.png', description: 'Ingredients: Apple, mint' }
+            { id: 20, name: 'watermelon', price: '60 EGP', image: '20.png', description: 'watermelon, soda, lemon, mint' },
+            { id: 21, name: 'Apple Mint', price: '65 EGP', image: '21.png', description: 'Ingredients: Apple, mint' }
         ]
     }
 ];
