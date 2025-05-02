@@ -35,13 +35,13 @@ const categories = [
         icon: '🍷',
         products: [
             { id: 10, name: 'Power Drink', price: '110 EGP', image: 'from36.png', description: 'Ingredients: Avocado, cashew, pistachio, banana, honey' },
-            { id: 11, name: 'Paradis', price: '60 EGP', image: 'from37.jpg', description: 'Ingredients: Mango, banana, strawberry, kiwi, ice cream' },
-            { id: 12, name: 'Mango Beach', price: '55 EGP', image: 'from30.jpg', description: 'Ingredients: Mango, vanilla, peach' },
-            { id: 13, name: 'Mango Kiwi', price: '60 EGP', image: 'from31.jpg', description: 'Ingredients: Mango, kiwi, ice cream' },
+            { id: 11, name: 'Paradis', price: '70 EGP', image: 'from37.jpg', description: 'Ingredients: Mango, banana, strawberry, kiwi, ice cream' },
+            { id: 12, name: 'Mango Beach', price: '60 EGP', image: 'from30.jpg', description: 'Ingredients: Mango, vanilla, peach' },
+            { id: 13, name: 'Mango Kiwi', price: '70 EGP', image: 'from31.jpg', description: 'Ingredients: Mango, kiwi, ice cream' },
             { id: 14, name: 'Isfahani', price: '80 EGP', image: 'from32.jpg', description: 'Ingredients: Mango, avocado, nuts' },
             { id: 15, name: 'Power Cashew', price: '80 EGP', image: 'from33.png', description: 'Ingredients: Dates, cashew' },
             { id: 16, name: 'Fruit Salad', price: '50 EGP', image: 'from34.jpg', description: 'A mix of fresh fruits' },
-            { id: 17, name: 'Colorts', price: '50 EGP', image: 'from35.jpg', description: 'Ingredients: Kiwi, lemon, mint' }
+            { id: 17, name: 'Colorts', price: '60 EGP', image: 'from35.jpg', description: 'Ingredients: Kiwi, lemon, mint' }
         ]
     },
     {
@@ -182,6 +182,7 @@ const categories = [
             { id: 18, name: 'Passion Fruit Mojito', price: '60 EGP', image: '19.png', description: 'Ingredients: Passion fruit, lemon, soda' },
             { id: 19, name: 'Gum', price: '50 EGP', image: '20.png', description: 'Gum' },
             { id: 20, name: 'Apple Mint', price: '65 EGP', image: '21.png', description: 'Ingredients: Apple, mint' }
+            { id: 20, name: 'Watermelon Mocktail', price: '60 EGP', image: 'WhatsApp Image 2025-04-26 at 21.30.52_29528aec.jpg', description: 'Ingredients: watermelon,soda,lemon,mint' }
         ]
     }
 ];
