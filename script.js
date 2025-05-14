@@ -147,7 +147,7 @@ const categories = [
         name: 'Ice Cream',
         icon: '🍦',
         products: [
-            { id: 1, name: 'One Bowl Ice-cream', price: '40 EGP', image: 'delicious-ice-cream-with-topping.jpg' }
+            { id: 1, name: 'One Bowl Ice-cream', price: '10 EGP', image: 'delicious-ice-cream-with-topping.jpg' }
         ]
     },
     {
