@@ -29,22 +29,35 @@ const categories = [
             { id: 22, name: 'Red Velvet Hot Chocolate', price: '60 EGP', image: '83.jpg' }
         ]
     },
-    {
-        id: 'Summer-drinks',
-        name: 'Summer Drinks',
-        icon: '🍷',
+     {
+        id: 'iced-drinks',
+        name: 'Iced Drinks',
+        icon: '☕️🧊',
         products: [
-            { id: 10, name: 'Power Drink', price: '110 EGP', image: 'from36.png', description: 'Ingredients: Avocado, cashew, pistachio, banana, honey' },
-            { id: 11, name: 'Paradis', price: '70 EGP', image: 'from37.jpg', description: 'Ingredients: Mango, banana, strawberry, kiwi, ice cream' },
-            { id: 12, name: 'Mango Beach', price: '60 EGP', image: 'from30.jpg', description: 'Ingredients: Mango, vanilla, peach' },
-            { id: 13, name: 'Mango Kiwi', price: '70 EGP', image: 'from31.jpg', description: 'Ingredients: Mango, kiwi, ice cream' },
-            { id: 14, name: 'Isfahani', price: '80 EGP', image: 'from32.jpg', description: 'Ingredients: Mango, avocado, nuts' },
-            { id: 15, name: 'Power Cashew', price: '80 EGP', image: 'from33.png', description: 'Ingredients: Dates, cashew' },
-            { id: 16, name: 'Fruit Salad', price: '50 EGP', image: 'from34.jpg', description: 'A mix of fresh fruits' },
-            { id: 17, name: 'Colorts', price: '60 EGP', image: 'from35.jpg', description: 'Ingredients: Kiwi, lemon, mint' }
+            { id: 1, name: 'Iced Coffee', price: '55 EGP', image: '22.jpeg' },
+            { id: 2, name: 'Iced Latte', price: '65 EGP', image: '23.png' },
+            { id: 3, name: 'Iced Caramel Latte', price: '65 EGP', image: '24.png' },
+            { id: 4, name: 'Iced Mocha', price: '65 EGP', image: '25.png' },
+            { id: 5, name: 'Iced White Mocha', price: '70 EGP', image: '26.jpg' },
+            { id: 6, name: 'White Mocha with Extra Cream', price: '95 EGP', image: '27.png' },
+            { id: 7, name: 'Iced Spanish Latte', price: '80 EGP', image: '28.jpg' },
+            { id: 8, name: 'Iced Matcha', price: '60 EGP', image: '29.jpg' }
         ]
     },
-    {
+     {
+        id: 'frappe',
+        name: 'Frappe',
+        icon: '🍧',
+        products: [
+            { id: 1, name: 'Matcha Frappe', price: '65 EGP', image: '57.jpg' },
+            { id: 2, name: 'Caramel Frappe', price: '65 EGP', image: '55.png' },
+            { id: 3, name: 'Vanilla Frappe', price: '55 EGP', image: '58.png' },
+            { id: 4, name: 'Mocha Frappe', price: '65 EGP', image: '56.png' },
+            { id: 5, name: 'Coffee Frappe', price: '60 EGP', image: '60.png' },
+            { id: 6, name: 'White Mocha Frappe', price: '70 EGP', image: '59.png' }
+        ]
+    },
+     {
         id: 'fresh-juice',
         name: 'Fresh Juice',
         icon: '🍹',
@@ -60,22 +73,7 @@ const categories = [
             { id: 91, name: 'Orange', price: '35 EGP', image: '92.png' }
         ]
     },
-    {
-        id: 'iced-drinks',
-        name: 'Iced Drinks',
-        icon: '☕️🧊',
-        products: [
-            { id: 1, name: 'Iced Coffee', price: '55 EGP', image: '22.jpeg' },
-            { id: 2, name: 'Iced Latte', price: '65 EGP', image: '23.png' },
-            { id: 3, name: 'Iced Caramel Latte', price: '65 EGP', image: '24.png' },
-            { id: 4, name: 'Iced Mocha', price: '65 EGP', image: '25.png' },
-            { id: 5, name: 'Iced White Mocha', price: '70 EGP', image: '26.jpg' },
-            { id: 6, name: 'White Mocha with Extra Cream', price: '95 EGP', image: '27.png' },
-            { id: 7, name: 'Iced Spanish Latte', price: '80 EGP', image: '28.jpg' },
-            { id: 8, name: 'Iced Matcha', price: '60 EGP', image: '29.jpg' }
-        ]
-    },
-    {
+      {
         id: 'smoothies',
         name: 'Smoothies',
         icon: '🥤',
@@ -91,16 +89,18 @@ const categories = [
         ]
     },
     {
-        id: 'frappe',
-        name: 'Frappe',
-        icon: '🍧',
+        id: 'Summer-drinks',
+        name: 'Summer Drinks',
+        icon: '🍷',
         products: [
-            { id: 1, name: 'Matcha Frappe', price: '65 EGP', image: '57.jpg' },
-            { id: 2, name: 'Caramel Frappe', price: '65 EGP', image: '55.png' },
-            { id: 3, name: 'Vanilla Frappe', price: '55 EGP', image: '58.png' },
-            { id: 4, name: 'Mocha Frappe', price: '65 EGP', image: '56.png' },
-            { id: 5, name: 'Coffee Frappe', price: '60 EGP', image: '60.png' },
-            { id: 6, name: 'White Mocha Frappe', price: '70 EGP', image: '59.png' }
+            { id: 10, name: 'Power Drink', price: '110 EGP', image: 'from36.png', description: 'Ingredients: Avocado, cashew, pistachio, banana, honey' },
+            { id: 11, name: 'Paradis', price: '70 EGP', image: 'from37.jpg', description: 'Ingredients: Mango, banana, strawberry, kiwi, ice cream' },
+            { id: 12, name: 'Mango Beach', price: '60 EGP', image: 'from30.jpg', description: 'Ingredients: Mango, vanilla, peach' },
+            { id: 13, name: 'Mango Kiwi', price: '70 EGP', image: 'from31.jpg', description: 'Ingredients: Mango, kiwi, ice cream' },
+            { id: 14, name: 'Isfahani', price: '80 EGP', image: 'from32.jpg', description: 'Ingredients: Mango, avocado, nuts' },
+            { id: 15, name: 'Power Cashew', price: '80 EGP', image: 'from33.png', description: 'Ingredients: Dates, cashew' },
+            { id: 16, name: 'Fruit Salad', price: '50 EGP', image: 'from34.jpg', description: 'A mix of fresh fruits' },
+            { id: 17, name: 'Colorts', price: '60 EGP', image: 'from35.jpg', description: 'Ingredients: Kiwi, lemon, mint' }
         ]
     },
     {
@@ -126,28 +126,6 @@ const categories = [
             { id: 16, name: 'Lemon', price: '50 EGP', image: '52.jpg' },
             { id: 17, name: 'Pineapple', price: '60 EGP', image: '53.png' },
             { id: 18, name: 'Pineapple Mango', price: '70 EGP', image: '54.jpg' }
-        ]
-    },
-    {
-        id: 'winter-corner',
-        name: 'Winter Corner',
-        icon: '❄️',
-        products: [
-            { id: 1, name: 'Hot Cider', price: '40 EGP', description: 'Hot Cider' },
-            { id: 2, name: 'Sahlab', price: '30 EGP', description: 'Sahlab' },
-            { id: 3, name: 'Sahlab with Nuts', price: '50 EGP', description: 'Sahlab with Nuts' },
-            { id: 4, name: 'Sahlab with Fruits', price: '50 EGP', description: 'Sahlab with Fruits' },
-            { id: 5, name: 'Sahlab Chocolate', price: '35 EGP', description: 'Sahlab Chocolate' },
-            { id: 6, name: 'Sahlab Chocolate with Nuts', price: '55 EGP', description: 'Sahlab Chocolate with Nuts' },
-            { id: 7, name: 'Hot Oreo', price: '55 EGP', description: 'Hot Oreo' }
-        ]
-    },
-    {
-        id: 'ice-cream',
-        name: 'Ice Cream',
-        icon: '🍦',
-        products: [
-            { id: 1, name: 'One Bowl Ice-cream', price: '10 EGP', image: 'delicious-ice-cream-with-topping.jpg' }
         ]
     },
     {
@@ -184,7 +162,29 @@ const categories = [
             { id: 20, name: 'watermelon', price: '60 EGP', image: 'WhatsApp Image 2025-04-26 at 21.30.52_29528aec.jpg', description: 'watermelon, soda, lemon, mint' },
             { id: 21, name: 'Apple Mint', price: '65 EGP', image: '21.png', description: 'Ingredients: Apple, mint' }
         ]
-    }
+    },
+    {
+        id: 'winter-corner',
+        name: 'Winter Corner',
+        icon: '❄️',
+        products: [
+            { id: 1, name: 'Hot Cider', price: '40 EGP', description: 'Hot Cider' },
+            { id: 2, name: 'Sahlab', price: '30 EGP', description: 'Sahlab' },
+            { id: 3, name: 'Sahlab with Nuts', price: '50 EGP', description: 'Sahlab with Nuts' },
+            { id: 4, name: 'Sahlab with Fruits', price: '50 EGP', description: 'Sahlab with Fruits' },
+            { id: 5, name: 'Sahlab Chocolate', price: '35 EGP', description: 'Sahlab Chocolate' },
+            { id: 6, name: 'Sahlab Chocolate with Nuts', price: '55 EGP', description: 'Sahlab Chocolate with Nuts' },
+            { id: 7, name: 'Hot Oreo', price: '55 EGP', description: 'Hot Oreo' }
+        ]
+    },
+     {
+        id: 'ice-cream',
+        name: 'Ice Cream',
+        icon: '🍦',
+        products: [
+            { id: 1, name: 'One Bowl Ice-cream', price: '10 EGP', image: 'delicious-ice-cream-with-topping.jpg' }
+        ]
+    },
 ];
 
 // Function to create product card
