@@ -1,5 +1,20 @@
 // Complete categories and products data for Flavour coffee shop
 const categories = [
+     {
+        id: 'waffle',
+        name: 'Waffle',
+        icon: '🧇',
+        products: [
+            { id: 1, name: 'Chocolate Waffle', price: '35 EGP', image: 'N.jpg', isNew: true },
+            { id: 2, name: 'Carmel Waffle', price: '40 EGP', image: 'C.jpeg', isNew: true },
+            { id: 3, name: 'Lotus Waffle', price: '45 EGP', image: 'L.webp', isNew: true },
+            { id: 4, name: 'Pistachio Waffle', price: '70 EGP', image: 'P.webp', isNew: true },
+            { id: 5, name: 'Tart Waffle', price: '110 EGP', image: 'delicious-ice-cream-with-topping.jpg', isNew: true },
+            { id: 4, name: 'Hohos Waffle', price: '35 EGP', image: 'H.jpeg', isNew: true },
+            { id: 4, name: 'Mix Waffle', price: '70 EGP', image: 'delicious-ice-cream-with-topping.jpg', isNew: true },
+            { id: 4, name: 'fatta Waffle', price: '75 EGP', image: 'F.jpg', isNew: true },
+        ]
+    },
     {
         id: 'hot-drinks',
         name: 'Hot Drinks',
