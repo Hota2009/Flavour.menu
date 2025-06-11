@@ -69,7 +69,7 @@ const categories = [
             { id: 3, name: 'Vanilla Frappe', price: '55 EGP', image: '58.png' },
             { id: 4, name: 'Mocha Frappe', price: '65 EGP', image: '56.png' },
             { id: 5, name: 'Coffee Frappe', price: '60 EGP', image: '60.png' },
-            { id: 6, name: 'frappetiono', price: '65 EGP', image: '55.png' },
+            { id: 6, name: 'frappetiono', price: '85 EGP', image: '55.png' },
             { id: 7, name: 'White Mocha Frappe', price: '70 EGP', image: '59.png' }
         ]
     },
