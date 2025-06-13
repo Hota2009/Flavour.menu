@@ -35,7 +35,7 @@ const categories = [
             { id: 13, name: 'Turkish Coffee', price: '20 EGP', image: '73.jpg' },
             { id: 14, name: 'French Coffee', price: '30 EGP', image: '74.jpg' },
             { id: 15, name: 'Nescafe', price: '35 EGP', image: '75.jpg' },
-            { id: 16, name: 'Tea', price: '10 EGP', image: '76.jpg' },
+            { id: 16, name: 'Tea', price: '15 EGP', image: '76.jpg' },
             { id: 17, name: 'Milk Tea', price: '20 EGP', image: '78.jpg' },
             { id: 18, name: 'Karak Tea', price: '35 EGP', image: '79.jpg' },
             { id: 19, name: 'Green Tea', price: '15 EGP', image: '80.png' },
