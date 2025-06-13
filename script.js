@@ -198,7 +198,8 @@ const categories = [
         name: 'Ice Cream',
         icon: '🍦',
         products: [
-            { id: 1, name: 'One Bowl Ice-cream', price: '10 EGP', image: 'delicious-ice-cream-with-topping.jpg' }
+            { id: 1, name: 'One Bowl Ice-cream', price: '15 EGP', image: 'delicious-ice-cream-with-topping.jpg' },
+{ id: 1, name: 'Two bowl of ice cream', price: '25 EGP', image: 'delicious-ice-cream-with-topping.jpg' }
         ]
     },
 ];
@@ -229,13 +230,13 @@ function filterProducts(category) {
         return categories.flatMap(cat => cat.products);
     }
     const foundCategory = categories.find(cat => cat.id === category);
-    return foundCategory ? foundCategory.products : [];
+    return foundCategory ? foundCategory. products : [];
 }
 
 // Function to search products
 function searchProducts(searchTerm) {
-    searchTerm = searchTerm.toLowerCase();
-    return categories.flatMap(category => 
+    searchTerm = searchTerm. toLowerCase();
+    return categories. flatMap(category => 
         category.products.filter(product => 
             product.name.toLowerCase().includes(searchTerm) ||
             (product.description && product.description.toLowerCase().includes(searchTerm))
@@ -246,8 +247,8 @@ function searchProducts(searchTerm) {
 // Initialize the page
 document.addEventListener('DOMContentLoaded', () => {
     // Display all products initially
-    displayProducts(categories.flatMap(cat => cat.products));
-
+    displayProducts(categories. flatMap(cat => cat. products));
+ 
     // Add click event listeners to categories
     const categoriesElements = document.querySelectorAll('.category');
     categoriesElements.forEach(category => {
