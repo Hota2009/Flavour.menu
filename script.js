@@ -10,7 +10,7 @@ const categories = [
             { id: 3, name: 'Lotus Waffle', price: '45 EGP', image: 'L.webp', isNew: true },
             { id: 4, name: 'Pistachio Waffle', price: '70 EGP', image: 'P.webp', isNew: true },
             { id: 5, name: 'Tart Waffle', price: '110 EGP', image: 't.jpg', isNew: true },
-            { id: 4, name: 'Hohos Waffle', price: '35 EGP', image: 'H.jpeg', isNew: true },
+            { id: 4, name: 'Hohos Waffle', price: '45 EGP', image: 'H.jpeg', isNew: true },
             { id: 4, name: 'Mix Waffle', price: '70 EGP', image: 'm.jpg', isNew: true },
             { id: 4, name: 'fatta Waffle', price: '75 EGP', image: 'F.jpg', isNew: true },
         ]
