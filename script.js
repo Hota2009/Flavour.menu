@@ -57,7 +57,7 @@ const categories = [
             { id: 6, name: 'White Mocha with Extra Cream', price: '95 EGP', image: '27.png' },
             { id: 7, name: 'Iced Spanish Latte', price: '85 EGP', image: '28.jpg' },
             { id: 8, name: 'Iced Matcha', price: '60 EGP', image: '29.jpg' },
-            { id: 8, name: 'Iced Matcha', price: '80 EGP', image: 'strawberry-matcha.jpg' }
+            { id: 8, name: 'Iced Matcha Strawberry', price: '80 EGP', image: 'strawberry-matcha.jpg' }
         ]
     },
      {
