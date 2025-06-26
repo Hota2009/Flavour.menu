@@ -110,6 +110,7 @@ const categories = [
         name: 'Summer Drinks',
         icon: '🍷',
         products: [
+             { id: 9, name: 'Kiwi and green apple', price: '70 EGP', image: 'images (2).jpeg', description: 'Ingredients: Kiwi , greenapple},
             { id: 10, name: 'Power Drink', price: '110 EGP', image: 'from36.png', description: 'Ingredients: Avocado, cashew, pistachio, banana, honey' },
             { id: 11, name: 'Paradis', price: '70 EGP', image: 'from37.jpg', description: 'Ingredients: Mango, banana, strawberry, kiwi, ice cream' },
             { id: 12, name: 'Mango Beach', price: '60 EGP', image: 'from30.jpg', description: 'Ingredients: Mango, vanilla, peach' },
