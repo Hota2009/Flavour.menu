@@ -87,7 +87,7 @@ const categories = [
             { id: 87, name: 'Strawberry', price: '40 EGP', image: '88.png' },
             { id: 88, name: 'Guava', price: '40 EGP', image: '89.png' },
             { id: 89, name: 'Lemon with Mint', price: '40 EGP', image: '90.png' },
-            { id: 90, name: 'Peach', price: '55 EGP', image: '91.png' },
+            { id: 90, name: 'Peach', price: '60 EGP', image: '91.png' },
             { id: 91, name: 'Orange', price: '35 EGP', image: '92.png' }
         ]
     },
@@ -292,3 +292,4 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 });
+
