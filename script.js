@@ -114,7 +114,7 @@ const categories = [
              { id: 9, name: 'Kiwi and green apple', price: '70 EGP', image: 'images (2).jpeg', description: 'Ingredients: Kiwi , greenapple'},
             { id: 10, name: 'Power Drink', price: '110 EGP', image: 'from36.png', description: 'Ingredients: Avocado, cashew, pistachio, banana, honey' },
             { id: 11, name: 'Paradis', price: '70 EGP', image: 'from37.jpg', description: 'Ingredients: Mango, banana, strawberry, kiwi, ice cream' },
-            { id: 12, name: 'Mango Beach', price: '60 EGP', image: 'from30.jpg', description: 'Ingredients: Mango, vanilla, peach' },
+            { id: 12, name: 'Mango Beach', price: '70 EGP', image: 'from30.jpg', description: 'Ingredients: Mango, vanilla, peach' },
             { id: 13, name: 'Mango Kiwi', price: '70 EGP', image: 'from31.jpg', description: 'Ingredients: Mango, kiwi, ice cream' },
             { id: 14, name: 'Isfahani', price: '80 EGP', image: 'from32.jpg', description: 'Ingredients: Mango, avocado, nuts' },
             { id: 15, name: 'Power Cashew', price: '80 EGP', image: 'from33.png', description: 'Ingredients: Dates, cashew' },
@@ -292,4 +292,5 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 });
+
 
