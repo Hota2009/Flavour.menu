@@ -98,7 +98,7 @@ const categories = [
         products: [
             { id: 1, name: 'Blueberry Smoothie', price: '60 EGP', image: '30.jpg' },
             { id: 2, name: 'Passion Fruit Smoothie', price: '65 EGP', image: '31.jpg' },
-            { id: 3, name: 'Peach Smoothie', price: '60 EGP', image: '32.jpg' },
+            { id: 3, name: 'Peach Smoothie', price: '65 EGP', image: '32.jpg' },
             { id: 4, name: 'Kiwi Smoothie', price: '80 EGP', image: '33.jpg' },
             { id: 5, name: 'Strawberry Smoothie', price: '45 EGP', image: '34.jpg' },
             { id: 6, name: 'Mango Smoothie', price: '45 EGP', image: '35.jpg' },
@@ -131,7 +131,7 @@ const categories = [
             { id: 2, name: 'Blueberry', price: '65 EGP', image: '38.png' },
             { id: 3, name: 'Mixed Berry', price: '70 EGP', image: '39.png' },
             { id: 4, name: 'Kiwi', price: '70 EGP', image: '40.png' },
-            { id: 5, name: 'Peach', price: '60 EGP', image: '41.png' },
+            { id: 5, name: 'Peach', price: '65 EGP', image: '41.png' },
             { id: 6, name: 'Watermelon', price: '55 EGP', image: '42.png' },
             { id: 7, name: 'Mango', price: '55 EGP', image: '43.png' },
             { id: 8, name: 'Strawberry', price: '55 EGP', image: '44.png' },
@@ -322,5 +322,6 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 });
+
 
 
