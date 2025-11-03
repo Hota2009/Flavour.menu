@@ -21,18 +21,18 @@ const categories = [
         name: 'Hot Drinks',
         icon: '☕',
         products: [
-            { id: 1, name: 'Con Panna Espresso', price: '55 EGP', image: '61.jpg' },
-            { id: 2, name: 'Cappuccino', price: '65 EGP', image: '62.png' },
-            { id: 3, name: 'Café Latte', price: '60 EGP', image: '63.jpg' },
-            { id: 4, name: 'Flat White', price: '65 EGP', image: '64.png' },
-            { id: 5, name: 'Matcha Latte', price: '60 EGP', image: '65.jpg' },
-            { id: 6, name: 'Cortado', price: '55 EGP', image: '66.png' },
-            { id: 7, name: 'Espresso', price: '35 EGP', image: '67.jpg' },
+            { id: 1, name: 'Con Panna Espresso', price: '60 EGP', image: '61.jpg' },
+            { id: 2, name: 'Cappuccino', price: '70 EGP', image: '62.png' },
+            { id: 3, name: 'Café Latte', price: '65 EGP', image: '63.jpg' },
+            { id: 4, name: 'Flat White', price: '70 EGP', image: '64.png' },
+            { id: 5, name: 'Matcha Latte', price: '65 EGP', image: '65.jpg' },
+            { id: 6, name: 'Cortado', price: '60 EGP', image: '66.png' },
+            { id: 7, name: 'Espresso', price: '40 EGP', image: '67.jpg' },
             { id: 8, name: 'Hot Chocolate', price: '50 EGP', image: '68.jpg' },
-            { id: 9, name: 'Mocha Coffee', price: '65 EGP', image: '69.png' },
-            { id: 10, name: 'White Mocha', price: '65 EGP', image: '70.png' },
-            { id: 11, name: 'Spanish Latte', price: '75 EGP', image: '71.png' },
-            { id: 12, name: 'Caramel Latte', price: '65 EGP', image: '72.png' },
+            { id: 9, name: 'Mocha Coffee', price: '70 EGP', image: '69.png' },
+            { id: 10, name: 'White Mocha', price: '70 EGP', image: '70.png' },
+            { id: 11, name: 'Spanish Latte', price: '80 EGP', image: '71.png' },
+            { id: 12, name: 'Caramel Latte', price: '70 EGP', image: '72.png' },
             { id: 13, name: 'Turkish Coffee', price: '20 EGP', image: '73.jpg' },
             { id: 14, name: 'French Coffee', price: '30 EGP', image: '74.jpg' },
             { id: 15, name: 'Nescafe', price: '35 EGP', image: '75.jpg' },
@@ -41,7 +41,7 @@ const categories = [
             { id: 18, name: 'Karak Tea', price: '35 EGP', image: '79.jpg' },
             { id: 19, name: 'Green Tea', price: '15 EGP', image: '80.png' },
             { id: 20, name: 'Herbal Tea', price: '15 EGP', image: '81.jpg' },
-            { id: 21, name: 'Macchiato', price: '35 EGP', image: '82.jpg' },
+            { id: 21, name: 'Macchiato', price: '45 EGP', image: '82.jpg' },
             { id: 22, name: 'Red Velvet Hot Chocolate', price: '60 EGP', image: '83.jpg' }
         ]
     },
@@ -50,15 +50,15 @@ const categories = [
         name: 'Iced Drinks',
         icon: '☕️🧊',
         products: [
-            { id: 1, name: 'Iced Coffee', price: '60 EGP', image: '22.jpeg' },
-            { id: 2, name: 'Iced Latte', price: '70 EGP', image: '23.png' },
-            { id: 3, name: 'Iced Caramel Latte', price: '70 EGP', image: '24.png' },
-            { id: 4, name: 'Iced Mocha', price: '70 EGP', image: '25.png' },
-            { id: 5, name: 'Iced White Mocha', price: '75 EGP', image: '26.jpg' },
-            { id: 6, name: 'White Mocha with Extra Cream', price: '95 EGP', image: '27.png' },
-            { id: 7, name: 'Iced Spanish Latte', price: '85 EGP', image: '28.jpg' },
-            { id: 8, name: 'Iced Matcha', price: '60 EGP', image: '29.jpg' },
-            { id: 8, name: 'Iced Matcha Strawberry', price: '80 EGP', image: 'strawberry-matcha.jpg' }
+            { id: 1, name: 'Iced Coffee', price: '65 EGP', image: '22.jpeg' },
+            { id: 2, name: 'Iced Latte', price: '5 EGP', image: '23.png' },
+            { id: 3, name: 'Iced Caramel Latte', price: '75 EGP', image: '24.png' },
+            { id: 4, name: 'Iced Mocha', price: '75 EGP', image: '25.png' },
+            { id: 5, name: 'Iced White Mocha', price: '80 EGP', image: '26.jpg' },
+            { id: 6, name: 'White Mocha with Extra Cream', price: '100 EGP', image: '27.png' },
+            { id: 7, name: 'Iced Spanish Latte', price: '90 EGP', image: '28.jpg' },
+            { id: 8, name: 'Iced Matcha', price: '75 EGP', image: '29.jpg' },
+            { id: 8, name: 'Iced Matcha Strawberry', price: '85 EGP', image: 'strawberry-matcha.jpg' }
         ]
     },
      {
@@ -71,7 +71,7 @@ const categories = [
             { id: 3, name: 'Vanilla Frappe', price: '55 EGP', image: '58.png' },
             { id: 4, name: 'Mocha Frappe', price: '65 EGP', image: '56.png' },
             { id: 5, name: 'Coffee Frappe', price: '60 EGP', image: '60.png' },
-            { id: 6, name: 'frappetiono', price: '85 EGP', image: '55.png' },
+            { id: 6, name: 'frappetiono', price: '90 EGP', image: '55.png' },
             { id: 7, name: 'White Mocha Frappe', price: '70 EGP', image: '59.png' }
         ]
     },
@@ -322,6 +322,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 });
+
 
 
 
