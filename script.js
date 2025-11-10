@@ -51,7 +51,7 @@ const categories = [
         icon: '☕️🧊',
         products: [
             { id: 1, name: 'Iced Coffee', price: '65 EGP', image: '22.jpeg' },
-            { id: 2, name: 'Iced Latte', price: '5 EGP', image: '23.png' },
+            { id: 2, name: 'Iced Latte', price: '75 EGP', image: '23.png' },
             { id: 3, name: 'Iced Caramel Latte', price: '75 EGP', image: '24.png' },
             { id: 4, name: 'Iced Mocha', price: '75 EGP', image: '25.png' },
             { id: 5, name: 'Iced White Mocha', price: '80 EGP', image: '26.jpg' },
@@ -323,6 +323,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 });
+
 
 
 
