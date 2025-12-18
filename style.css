@@ -61,6 +61,33 @@ header {
     border-radius: 15px;
     color: white;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+        radial-gradient(circle at 15% 60%, #228b22 0%, transparent 10%),
+        radial-gradient(circle at 85% 85%, #228b22 0%, transparent 10%);
+    pointer-events: none;
+    z-index: 0;
+    animation: ornamentGlow 3s ease-in-out infinite;
+}
+
+@keyframes ornamentGlow {
+    0%, 100% { opacity: 0.8; }
+    50% { opacity: 1; }
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 1;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 40px;
+    padding: 30px 20px;
+    background: linear-gradient(135deg, #1a472a, #2d5a3f);
+    border-radius: 15px;
+    color: white;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
     position: relative;
     overflow: hidden;
     border: 2px solid #d4af37;
@@ -660,4 +687,5 @@ h1::after {
         max-width: 250px;
     }
 }
+
 
