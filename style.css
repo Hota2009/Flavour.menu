@@ -5,31 +5,114 @@
     font-family: 'Cairo', sans-serif;
 }
 
+/* Snowflakes */
+@keyframes snow {
+    0% {background-position: 0 0, 0 0, 0 0;}
+    100% {background-position: 500px 1000px, 400px 400px, 300px 300px;}
+}
+
 body {
-    background-color: #f8f9fa;
+    background: linear-gradient(180deg, #1a472a 0%, #2d5a3f 50%, #1a472a 100%);
     padding: 20px;
     min-height: 100vh;
+    position: relative;
+    overflow-x: hidden;
+}
+
+body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: 
+        radial-gradient(circle at 10% 20%, #dc143c 0%, transparent 15%),
+        radial-gradient(circle at 90% 30%, #ffd700 0%, transparent 12%),
+        radial-gradient(circle at 20% 80%, #ffd700 0%, transparent 12%),
+        radial-gradient(circle at 80% 70%, #dc143c 0%, transparent 15%),
+        radial-gradient(circle at 50% 10%, #ffd700 0%, transparent 10%),
+        radial-gradient(circle at 30% 50%, #dc143c 0%, transparent 12%),
+        radial-gradient(circle at 70% 50%, #ffd700 0%, transparent 12%),
+        radial-gradient(circle at 15% 60%, #228b22 0%, transparent 10%),
+        radial-gradient(circle at 85% 85%, #228b22 0%, transparent 10%);
+    pointer-events: none;
+    z-index: 0;
+    animation: ornamentGlow 3s ease-in-out infinite;
+}
+
+@keyframes ornamentGlow {
+    0%, 100% { opacity: 0.8; }
+    50% { opacity: 1; }
 }
 
 .container {
     max-width: 1200px;
     margin: 0 auto;
+    position: relative;
+    z-index: 1;
 }
 
 header {
     text-align: center;
     margin-bottom: 40px;
-    padding: 20px;
-    background: linear-gradient(135deg, #ad8330, #cda65a);
+    padding: 30px 20px;
+    background: linear-gradient(135deg, #1a472a, #2d5a3f);
     border-radius: 15px;
     color: white;
-    box-shadow: 0 4px 15px rgba(255, 107, 107, 0.2);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    position: relative;
+    overflow: hidden;
+    border: 2px solid #d4af37;
+}
+
+header::before {
+    content: '🎄';
+    position: absolute;
+    font-size: 24px;
+    left: 20px;
+    top: 20px;
+    animation: jingle 2s infinite alternate;
+}
+
+header::after {
+    content: '✨';
+    position: absolute;
+    font-size: 24px;
+    right: 20px;
+    top: 20px;
+    animation: twinkle 3s infinite alternate;
 }
 
 h1 {
-    font-size: 2.5em;
+    font-size: 2.8em;
     margin-bottom: 10px;
     font-weight: 700;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    background: linear-gradient(45deg, #ffffff, #d4af37);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+    position: relative;
+    display: inline-block;
+    padding: 0 20px;
+}
+
+h1::before, h1::after {
+    content: '🎄';
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 0.8em;
+}
+
+h1::before {
+    left: -10px;
+}
+
+h1::after {
+    right: -10px;
 }
 
 .subtitle {
@@ -49,11 +132,14 @@ h1 {
 .search-container input {
     width: 100%;
     padding: 12px 40px 12px 15px;
-    border: 2px solid #3a320c;
+    border: 2px solid #d4af37;
     border-radius: 25px;
     font-size: 1em;
     outline: none;
     transition: all 0.3s ease;
+    background-color: rgba(255, 255, 255, 0.9);
+    color: #1a472a;
+    font-weight: bold;
 }
 
 .search-container input:focus {
@@ -72,7 +158,7 @@ h1 {
 /* Categories Styles */
 .categories {
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
     gap: 10px;
     margin-bottom: 30px;
     padding: 10px;
@@ -91,19 +177,24 @@ h1 {
 }
 
 .category {
-    background-color: #fff;
-    padding: 8px 15px;
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 10px 15px;
     border-radius: 25px;
     cursor: pointer;
     transition: all 0.3s ease;
-    border: 2px solid #ffffff;
+    border: 2px solid #d4af37;
     color: #cda65a;
     font-weight: 600;
     font-size: 0.9em;
     flex-shrink: 0;
     display: flex;
     align-items: center;
+    justify-content: center;
     gap: 8px;
+    width: 160px;
+    height: 60px;
+    min-height: 60px;
+    max-height: 60px;
 }
 
 .category i {
@@ -117,8 +208,11 @@ h1 {
 }
 
 .category.active {
-    background-color: #3a320c;
+    background: linear-gradient(135deg, #1a472a, #2d5a3f);
     color: white;
+    border-color: #d4af37;
+    box-shadow: 0 0 10px rgba(255, 215, 0, 0.5);
+    transform: translateY(-2px);
 }
 
 /* Products Grid */
@@ -129,23 +223,25 @@ h1 {
     padding: 10px;
 }
 
-.product-card {
-    background-color: white;
-    border-radius: 15px;
+.product {
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.98) 0%, rgba(240, 248, 255, 0.95) 100%);
+    border-radius: 25px;
     overflow: hidden;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-    transition: all 0.3s ease;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15), inset 0 1px 0 rgba(255, 255, 255, 0.6);
+    transition: all 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
+    display: flex;
+    flex-direction: column;
+    height: 100%;
     position: relative;
-    opacity: 0;
-    transform: translateY(20px);
-    animation: fadeInUp 0.5s ease forwards;
+    border: 2px solid rgba(212, 175, 55, 0.3);
+    backdrop-filter: blur(10px);
 }
 
-@keyframes fadeInUp {
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
+.product:hover {
+    transform: translateY(-12px) scale(1.02);
+    box-shadow: 0 20px 40px rgba(212, 175, 55, 0.25), 0 0 30px rgba(255, 255, 255, 0.3), inset 0 1px 0 rgba(255, 255, 255, 0.8);
+    border-color: rgba(212, 175, 55, 0.6);
+    background: linear-gradient(135deg, rgba(255, 255, 255, 1) 0%, rgba(255, 250, 240, 0.98) 100%);
 }
 
 .product-card:hover {
@@ -155,31 +251,46 @@ h1 {
 
 .product-image {
     width: 100%;
-    height: 200px;
+    height: 220px;
     object-fit: cover;
-    transition: transform 0.3s ease;
+    transition: transform 0.5s cubic-bezier(0.34, 1.56, 0.64, 1), filter 0.3s ease;
+    filter: brightness(1);
+    border-radius: 25px 25px 0 0;
 }
 
-.product-card:hover .product-image {
-    transform: scale(1.05);
+.product:hover .product-image {
+    transform: scale(1.1) rotate(2deg);
+    filter: brightness(1.1);
 }
 
 .product-info {
-    padding: 15px;
-    background: white;
+    padding: 18px 20px 20px 20px;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.95) 0%, rgba(245, 250, 255, 0.95) 100%);
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: -8px;
+    border-radius: 0 0 25px 25px;
+    position: relative;
+    z-index: 1;
 }
 
 .product-name {
-    font-size: 1.1em;
-    margin-bottom: 10px;
-    color: #333;
-    font-weight: 600;
+    font-size: 1.15em;
+    margin-bottom: 12px;
+    color: #1a472a;
+    font-weight: 700;
+    line-height: 1.4;
+    letter-spacing: 0.3px;
 }
 
 .product-price {
-    font-size: 1.2em;
-    color: #3a320c;
-    font-weight: 700;
+    font-size: 1.4em;
+    color: #d4af37;
+    font-weight: 800;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    letter-spacing: 0.5px;
 }
 
 /* NEW Badge Styles */
@@ -237,7 +348,7 @@ h1 {
     font-size: 1.2em;
     box-shadow: 0 2px 10px rgba(0,0,0,0.1);
     transition: all 0.3s ease;
-    z-index: 1000;
+    z-index: 100;
 }
 
 .scroll-top:hover {
@@ -250,6 +361,60 @@ h1 {
 }
 
 /* Desktop styles */
+/* Animations */
+@keyframes jingle {
+    0% { transform: rotate(-10deg); }
+    100% { transform: rotate(10deg); }
+}
+
+@keyframes twinkle {
+    0%, 100% { opacity: 0.5; }
+    50% { opacity: 1; }
+}
+
+/* Christmas Decoration */
+.christmas-decoration {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+}
+
+.snowflake {
+    position: fixed;
+    color: #fff;
+    font-size: 20px;
+    animation: fall linear infinite;
+    pointer-events: none;
+    z-index: 500;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+    filter: drop-shadow(0 0 2px rgba(255, 255, 255, 0.6));
+}
+
+@keyframes fall {
+    0% {
+        transform: translateY(-10vh) translateX(0) rotate(0deg);
+        opacity: 1;
+    }
+    25% {
+        transform: translateY(25vh) translateX(50px) rotate(90deg);
+    }
+    50% {
+        transform: translateY(50vh) translateX(-30px) rotate(180deg);
+    }
+    75% {
+        transform: translateY(75vh) translateX(40px) rotate(270deg);
+    }
+    100% {
+        transform: translateY(100vh) translateX(0) rotate(360deg);
+        opacity: 0;
+    }
+}
+
+/* Responsive Design */
 @media (min-width: 768px) {
     .products {
         grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
