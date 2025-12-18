@@ -188,13 +188,13 @@ const categories = [
         name: 'Winter Corner',
         icon: '❄️',
         products: [
-            { id: 1, name: 'Hot Cider', price: '40 EGP', description: 'Hot Cider' },
-            { id: 2, name: 'Sahlab', price: '30 EGP', description: 'Sahlab' },
-            { id: 3, name: 'Sahlab with Nuts', price: '50 EGP', description: 'Sahlab with Nuts' },
-            { id: 4, name: 'Sahlab with Fruits', price: '50 EGP', description: 'Sahlab with Fruits' },
-            { id: 5, name: 'Sahlab Chocolate', price: '35 EGP', description: 'Sahlab Chocolate' },
-            { id: 6, name: 'Sahlab Chocolate with Nuts', price: '55 EGP', description: 'Sahlab Chocolate with Nuts' },
-            { id: 7, name: 'Hot Oreo', price: '55 EGP', description: 'Hot Oreo' }
+            { id: 1, name: 'Hot Cider', price: '40 EGP', image: 'Hot Cider.webp', description: 'Hot Cider' },
+            { id: 2, name: 'Sahlab', price: '30 EGP', image: 'sahlb 2.webp', description: 'Sahlab' },
+            { id: 3, name: 'Sahlab with Nuts', price: '50 EGP', image: 'sahlb 1.webp', description: 'Sahlab with Nuts' },
+            { id: 4, name: 'Sahlab with Fruits', price: '50 EGP', image: 'Sahlab with Fruits.webp', description: 'Sahlab with Fruits' },
+            { id: 5, name: 'Sahlab Chocolate', price: '35 EGP', image: 'Sahlab Chocolate with Nuts.webp', description: 'Sahlab Chocolate' },
+            { id: 6, name: 'Sahlab Chocolate with Nuts', price: '55 EGP', image: 'Sahlab Chocolate with Nuts.webp', description: 'Sahlab Chocolate with Nuts' },
+            { id: 7, name: 'Hot Oreo', price: '55 EGP', image: 'Hot Oreo.webp', description: 'Hot Oreo' }
         ]
     },
      {
@@ -322,6 +322,38 @@ document.addEventListener('DOMContentLoaded', () => {
             behavior: 'smooth'
         });
     });
+
+    // Create falling snowflakes
+    function createSnowflake() {
+        const snowflake = document.createElement('div');
+        snowflake.classList.add('snowflake');
+        snowflake.textContent = '❄';
+        
+        const randomX = Math.random() * window.innerWidth;
+        const randomDuration = Math.random() * 5 + 8;
+        const randomDelay = Math.random() * 2;
+        
+        snowflake.style.left = randomX + 'px';
+        snowflake.style.top = '-50px';
+        snowflake.style.animationDuration = randomDuration + 's';
+        snowflake.style.animationDelay = randomDelay + 's';
+        
+        document.body.appendChild(snowflake);
+        
+        setTimeout(() => {
+            if (snowflake.parentNode) {
+                snowflake.remove();
+            }
+        }, (randomDuration + randomDelay) * 1000);
+    }
+    
+    // Create snowflakes continuously
+    const snowflakeInterval = setInterval(createSnowflake, 300);
+    
+    // Create initial batch of snowflakes
+    for (let i = 0; i < 20; i++) {
+        setTimeout(createSnowflake, i * 50);
+    }
 });
 
 
