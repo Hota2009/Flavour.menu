@@ -67,7 +67,7 @@ const categories = [
         name: 'Frappe',
         icon: '🍧',
         products: [
-            { id: 1, name: 'Matcha Frappe', price: '65 EGP', image: '57.jpg' },
+            { id: 1, name: 'Matcha Frappe', price: '75 EGP', image: '57.jpg' },
             { id: 2, name: 'Caramel Frappe', price: '65 EGP', image: '55.png' },
             { id: 3, name: 'Vanilla Frappe', price: '55 EGP', image: '58.png' },
             { id: 4, name: 'Mocha Frappe', price: '65 EGP', image: '56.png' },
@@ -354,6 +354,7 @@ document.addEventListener('DOMContentLoaded', () => {
         setTimeout(createSnowflake, i * 50);
     }
 });
+
 
 
 
