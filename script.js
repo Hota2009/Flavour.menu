@@ -247,6 +247,32 @@ function searchProducts(searchTerm) {
     );
 }
 
+// Welcome Modal functionality
+function showWelcomeModal() {
+    const modal = document.getElementById('welcomeModal');
+    const closeBtn = document.querySelector('.close');
+    const closeModalBtn = document.getElementById('closeModal');
+    
+    // Show modal
+    modal.style.display = 'block';
+    
+    // Close modal when clicking X
+    closeBtn.onclick = function() {
+        modal.style.display = 'none';
+    }
+    
+    // Close modal when clicking "تصفح المنيو" button
+    closeModalBtn.onclick = function() {
+        modal.style.display = 'none';
+    }
+    
+    // Close modal when clicking outside of it
+    window.onclick = function(event) {
+        if (event.target == modal) {
+            modal.style.display = 'none';
+        }
+    }
+}
 
 // Initialize the page
 document.addEventListener('DOMContentLoaded', () => {
@@ -328,7 +354,6 @@ document.addEventListener('DOMContentLoaded', () => {
         setTimeout(createSnowflake, i * 50);
     }
 });
-
 
 
 
