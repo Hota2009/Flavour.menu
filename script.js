@@ -84,15 +84,15 @@ const categories = [
         name: 'Fresh Juice',
         icon: '🍹',
         products: [
-            { id: 83, name: 'Kiwi', price: '70 EGP', image: '84.png' },
-            { id: 84, name: 'Banana with Milk', price: '45 EGP', image: '85.png' },
-            { id: 85, name: 'Watermelon', price: '40 EGP', image: '86.png' },
-            { id: 86, name: 'Mango', price: '40 EGP', image: '87.png' },
-            { id: 87, name: 'Strawberry', price: '40 EGP', image: '88.png' },
-            { id: 88, name: 'Guava', price: '40 EGP', image: '89.png' },
-            { id: 89, name: 'Lemon with Mint', price: '40 EGP', image: '90.png' },
-            { id: 90, name: 'Peach', price: '60 EGP', image: '91.png' },
-            { id: 91, name: 'Orange', price: '40 EGP', image: '92.png' }
+            { id: 83, name: 'Kiwi', price: '75 EGP', image: '84.png' },
+            { id: 84, name: 'Banana with Milk', price: '50 EGP', image: '85.png' },
+            { id: 85, name: 'Watermelon', price: '45 EGP', image: '86.png' },
+            { id: 86, name: 'Mango', price: '45 EGP', image: '87.png' },
+            { id: 87, name: 'Strawberry', price: '45 EGP', image: '88.png' },
+            { id: 88, name: 'Guava', price: '45 EGP', image: '89.png' },
+            { id: 89, name: 'Lemon with Mint', price: '45 EGP', image: '90.png' },
+            { id: 90, name: 'Peach', price: '45 EGP', image: '91.png' },
+            { id: 91, name: 'Orange', price: '45 EGP', image: '92.png' }
         ]
     },
       {
@@ -172,18 +172,18 @@ const categories = [
         name: 'Mocktails',
         icon: '🍸',
         products: [
-            { id: 10, name: 'Lavender', price: '60 EGP', image: '11.png', description: 'Ingredients: Lemon juice, lavender' },
-            { id: 11, name: 'Sun Shine', price: '55 EGP', image: '12.png', description: 'Ingredients: Strawberry, lemon, soda' },
-            { id: 12, name: 'Sun Set', price: '60 EGP', image: '13.png', description: 'Ingredients: Strawberry, orange, lemon, soda' },
-            { id: 13, name: 'Blue Sky', price: '60 EGP', image: '14.png', description: 'Ingredients: Blue Curacao, lemon, soda' },
-            { id: 14, name: 'Skutch Mint', price: '60 EGP', image: '15.png', description: 'Ingredients: Mint, lemon, soda' },
-            { id: 15, name: 'Blue Passion', price: '70 EGP', image: '16.png', description: 'Ingredients: Passion fruit, Blue Curacao, lemon, soda' },
-            { id: 16, name: 'Peach Mojito', price: '60 EGP', image: '17.png', description: 'Ingredients: Peach, lemon, soda' },
-            { id: 17, name: 'Blue Power', price: '95 EGP', image: '18.png', description: 'Ingredients: Red Bull, Blue Curacao, lemon, soda' },
-            { id: 18, name: 'Passion Fruit Mojito', price: '60 EGP', image: '19.png', description: 'Ingredients: Passion fruit, lemon, soda' },
-            { id: 19, name: 'Gum', price: '55 EGP', image: '20.png', description: 'Gum' },
-            { id: 20, name: 'watermelon', price: '60 EGP', image: 'WhatsApp Image 2025-04-26 at 21.30.52_29528aec.jpg', description: 'watermelon, soda, lemon, mint' },
-            { id: 21, name: 'Apple Mint', price: '65 EGP', image: '21.png', description: 'Ingredients: Apple, mint' }
+            { id: 10, name: 'Lavender', price: '65 EGP', image: '11.png', description: 'Ingredients: Lemon juice, lavender' },
+            { id: 11, name: 'Sun Shine', price: '65 EGP', image: '12.png', description: 'Ingredients: Strawberry, lemon, soda' },
+            { id: 12, name: 'Sun Set', price: '65 EGP', image: '13.png', description: 'Ingredients: Strawberry, orange, lemon, soda' },
+            { id: 13, name: 'Blue Sky', price: '65 EGP', image: '14.png', description: 'Ingredients: Blue Curacao, lemon, soda' },
+            { id: 14, name: 'Skutch Mint', price: '65 EGP', image: '15.png', description: 'Ingredients: Mint, lemon, soda' },
+            { id: 15, name: 'Blue Passion', price: '75 EGP', image: '16.png', description: 'Ingredients: Passion fruit, Blue Curacao, lemon, soda' },
+            { id: 16, name: 'Peach Mojito', price: '65 EGP', image: '17.png', description: 'Ingredients: Peach, lemon, soda' },
+            { id: 17, name: 'Blue Power', price: '100 EGP', image: '18.png', description: 'Ingredients: Red Bull, Blue Curacao, lemon, soda' },
+            { id: 18, name: 'Passion Fruit Mojito', price: '65 EGP', image: '19.png', description: 'Ingredients: Passion fruit, lemon, soda' },
+            { id: 19, name: 'Gum', price: '60 EGP', image: '20.png', description: 'Gum' },
+            { id: 20, name: 'watermelon', price: '65 EGP', image: 'WhatsApp Image 2025-04-26 at 21.30.52_29528aec.jpg', description: 'watermelon, soda, lemon, mint' },
+            { id: 21, name: 'Apple Mint', price: '70 EGP', image: '21.png', description: 'Ingredients: Apple, mint' }
         ]
     },
     {
@@ -302,6 +302,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 });
+
 
 
 
