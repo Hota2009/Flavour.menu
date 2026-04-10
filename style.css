@@ -30,7 +30,7 @@ body::before {
 /* =================================
    MAIN CONTAINER & BACKGROUND
 ================================= */
-.ramadan-container {
+.main-container {
     position: relative;
     z-index: 2;
     padding-bottom: 5rem;
@@ -38,26 +38,9 @@ body::before {
     max-width: 1400px;
     margin: 0 auto;
     overflow: visible;
-    /* Main side borders like the image */
-    border-left: 2px solid rgba(255, 200, 87, 0.2);
-    border-right: 2px solid rgba(255, 200, 87, 0.2);
 }
 
-/* Luxury Decorative Curved Frame (Full Height Arch) */
-.ramadan-container::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    /* Clean Arch with side curves and glowing dots */
-    background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000" preserveAspectRatio="none"><path d="M50,1000 L50,300 Q50,30 500,30 Q950,30 950,300 L950,1000" fill="none" stroke="rgba(255, 200, 87, 0.25)" stroke-width="2" stroke-dasharray="10,5"/><path d="M70,1000 L70,310 Q70,50 500,50 Q930,50 930,310 L930,1000" fill="none" stroke="rgba(255, 200, 87, 0.1)" stroke-width="1"/><circle cx="500" cy="30" r="4" fill="rgba(255, 200, 87, 0.6)"/><circle cx="250" cy="100" r="2" fill="rgba(255, 200, 87, 0.4)"/><circle cx="750" cy="100" r="2" fill="rgba(255, 200, 87, 0.4)"/><circle cx="100" cy="300" r="1.5" fill="rgba(255, 200, 87, 0.3)"/><circle cx="900" cy="300" r="1.5" fill="rgba(255, 200, 87, 0.3)"/></svg>');
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
-    pointer-events: none;
-    z-index: -1;
-}
+/* Luxury Decorative Curved Frame Removed */
 
 /* =================================
    HEADER SECTION (Perfect Image Match)
@@ -69,32 +52,7 @@ body::before {
     z-index: 5;
 }
 
-.arabic-text {
-    font-size: 2rem;
-    color: #ffc857;
-    margin-bottom: 0.2rem;
-    font-family: 'Cairo', sans-serif;
-    text-shadow: 0 0 15px rgba(255, 200, 87, 0.6);
-    letter-spacing: 1px;
-    font-weight: 400;
-}
-
-.main-title-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 12px;
-    margin-bottom: 0.2rem;
-}
-
-.moon-icon {
-    width: 50px;
-    height: 50px;
-    background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><path d="M50,10 A40,40 0 1,0 90,50 A35,35 0 1,1 50,15" fill="%23ffc857"/></svg>');
-    background-size: contain;
-    background-repeat: no-repeat;
-    filter: drop-shadow(0 0 10px #ffc857);
-}
+/* Ramadan elements removed */
 
 .main-title {
     font-size: 5rem;
@@ -106,43 +64,7 @@ body::before {
     line-height: 1;
 }
 
-.lantern {
-    position: absolute;
-    z-index: 100;
-    width: 70px;
-    height: 120px;
-    filter: drop-shadow(0 0 25px rgba(255, 200, 87, 0.9));
-    animation: swing-lantern 6s ease-in-out infinite;
-    pointer-events: none;
-    transform-origin: top center;
-}
-
-.lantern svg {
-    width: 100%;
-    height: 100%;
-    filter: drop-shadow(0 5px 10px rgba(0,0,0,0.5));
-}
-
-.lantern-glass {
-    fill: #ffc107;
-    fill-opacity: 0.9;
-    animation: lantern-glow-pulse 3s infinite alternate;
-}
-
-@keyframes lantern-glow-pulse {
-    0%, 100% { fill: #ff9800; filter: contrast(1.2) brightness(1); }
-    50% { fill: #ffeb3b; filter: contrast(1.5) brightness(1.3); }
-}
-
-.lantern.left-outer { top: 60px; left: 6%; }
-.lantern.left-inner { top: 20px; left: 20%; width: 55px; height: 100px; animation-duration: 5s; animation-delay: 0.5s; }
-.lantern.right-outer { top: 60px; right: 6%; }
-.lantern.right-inner { top: 20px; right: 20%; width: 55px; height: 100px; animation-duration: 5s; animation-delay: 0.8s; }
-
-@keyframes swing-lantern {
-    0%, 100% { transform: rotate(-5deg); }
-    50% { transform: rotate(5deg); }
-}
+/* Lantern styles removed */
 
 .subtitle {
     font-size: 1.6rem;
@@ -276,16 +198,11 @@ body::before {
     flex-direction: column;
 }
 
-/* Islamic Corner Ornaments - Scaled down */
+/* Standard Corner Ornaments */
 .product-card::before {
     content: '';
     position: absolute;
     inset: 0;
-    background: 
-        url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><path d="M0,15 L0,0 L15,0 Q5,0 5,5 Q0,5 0,15 Z" fill="%23d4af37"/></svg>') 0 0,
-        url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><path d="M85,0 L100,0 L100,15 Q100,5 95,5 Q95,0 85,0 Z" fill="%23d4af37"/></svg>') 100% 0,
-        url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><path d="M0,85 L0,100 L15,100 Q5,100 5,95 Q0,95 0,85 Z" fill="%23d4af37"/></svg>') 0 100%,
-        url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><path d="M85,100 L100,100 L100,85 Q100,95 95,95 Q95,100 85,100 Z" fill="%23d4af37"/></svg>') 100% 100%;
     background-repeat: no-repeat;
     background-size: 20px 20px;
     z-index: 4;
@@ -410,27 +327,7 @@ body::before {
 }
 
 /* Common Animations */
-@keyframes float-particle {
-    0% { transform: translateY(100vh) scale(0); opacity: 0; }
-    10% { opacity: 1; }
-    90% { opacity: 1; }
-    100% { transform: translateY(-100vh) scale(1); opacity: 0; }
-}
-
-@keyframes float-gentle {
-    0%, 100% { transform: translateY(0); }
-    50% { transform: translateY(-15px); }
-}
-
-.particle {
-    position: absolute;
-    background: radial-gradient(circle, #fff 0%, #ffc857 40%, transparent 100%);
-    border-radius: 50%;
-    pointer-events: none;
-    animation: float-particle linear infinite;
-    z-index: 2;
-    box-shadow: 0 0 10px #ffc857;
-}
+/* Particle styles removed */
 
 .copyright {
     text-align: center;
